@@ -7,6 +7,7 @@ body{
     background-color: wheat;
 }
 .slider-container{
+    position: relative;
     width:500px;
     height: 300px;
     overflow: hidden;
@@ -15,6 +16,7 @@ body{
 }
 .image-container{
     display:flex;
+    transition: transform 0.4s ease-in-out;
 }
 .btn{
     position: absolute;
@@ -25,9 +27,12 @@ body{
     opacity: .5;
     cursor: pointer;
 }
+.btn:hover{
+    opacity: .7;
+}
 .btn.prev{
-    left:140px
+    left:10px
 }
 .btn.next{
-    right:144px
+    right:14px
 }
